@@ -12,7 +12,7 @@
 ⚡️ Modern UI Design\
 ⚡️ One Page Layout built with React\
 ⚡️ Styled with TailwindCss and Styled-Components\
-⚡️ Fully Responsive\
+⚡️ Fully Responsive
 
 ## Getting Started 🚀
 
