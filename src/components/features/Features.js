@@ -11,7 +11,6 @@ import software from "images/ufo.svg";
 import prop from "images/automated-process.svg";
 import robot from "images/robot.svg";
 
-import { Element } from 'react-scroll'
 
 const Container = tw.div`relative`;
 

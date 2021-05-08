@@ -5,11 +5,11 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro";
 import Header from "../header/Header.js";
 import DesignIllustration from "../../images/ufo2.svg";
-import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
-import reactn from "../../images/react.png";
-import github from "../../images/github.jpg";
-import node from "../../images/node.jpg";
-import { SectionHeading } from "components/misc/Headings.js";
+// import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
+// import reactn from "../../images/react.png";
+// import github from "../../images/github.jpg";
+// import node from "../../images/node.jpg";
+// import { SectionHeading } from "components/misc/Headings.js";
 
 
 const Container = tw.div`relative`;
@@ -22,15 +22,15 @@ const Paragraph = tw.p`my-5 lg:my-8 text-base xl:text-lg`;
 
 const IllustrationContainer = tw.div`flex justify-center lg:justify-end items-center`;
 
-const CustomersLogoStrip = styled.div`
-  ${tw`mt-12 lg:mt-20`}
-  p {
-    ${tw`uppercase text-sm lg:text-xs tracking-wider font-bold text-gray-500`}
-  }
-  img {
-    ${tw`mt-4 w-full lg:pr-16 xl:pr-32 opacity-50`}
-  }
-`;
+// const CustomersLogoStrip = styled.div`
+//   ${tw`mt-12 lg:mt-20`}
+//   p {
+//     ${tw`uppercase text-sm lg:text-xs tracking-wider font-bold text-gray-500`}
+//   }
+//   img {
+//     ${tw`mt-4 w-full lg:pr-16 xl:pr-32 opacity-50`}
+//   }
+// `;
 
 export default ({ roundedHeaderButton }) => {
   return (
