@@ -3,12 +3,12 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "images/kbase_logo.png";
+import LogoImage from "images/biochemistry.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
+import { ReactComponent as GitHub } from "images/github-logo-face.svg";
+// import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
 
-const Container = tw.div`relative bg-orange-500 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = tw.div`relative bg-black text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-12`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -24,8 +24,8 @@ const Divider = tw.div`my-16 border-b-2 border-black w-full`;
 
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
-const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-40`;
+const LogoContainer = tw.div`flex items-center justify-center md:justify-start `;
+const LogoImg = tw.img`w-20`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
 
@@ -41,7 +41,7 @@ export default () => {
   return (
     <Container>
       <Content>
-        <FiveColumns>
+        {/* <FiveColumns>
           <Column>
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
@@ -127,23 +127,23 @@ export default () => {
               </LinkListItem>
             </LinkList>
           </Column>
-        </FiveColumns>
-        <Divider />
+        </FiveColumns> */}
+        {/* <Divider /> */}
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
           </LogoContainer>
-          <CopywrightNotice>&copy; Kbase by Aton Bertini Dornfeld</CopywrightNotice>
+          <CopywrightNotice>&copy;Reis e Bertini 2021</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink href="https://github.com/aton-py">
+              <GitHub />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            {/* <SocialLink href="https://youtube.com">
               <YoutubeIcon />
-            </SocialLink>
+            </SocialLink> */}
           </SocialLinksContainer>
         </ThreeColRow>
       </Content>

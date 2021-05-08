@@ -6,34 +6,34 @@ import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 
-import defaultCardImage from "images/shield-icon.svg";
+import dev from "images/engineer.svg";
+import software from "images/ufo.svg";
+import prop from "images/automated-process.svg";
+import robot from "images/robot.svg";
 
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
+import { Element } from 'react-scroll'
 
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-10 md:py-8`}
 `;
-const Subheading = tw(SubheadingBase)`mb-4`;
+const Subheading = tw(SubheadingBase)`mb-2`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
-const VerticalSpacer = tw.div`mt-10 w-full`
+const VerticalSpacer = tw.div`mt-20 w-full`
 
 const Column = styled.div`
-  ${tw`md:w-1/2 lg:w-1/2 max-w-sm`}
+  ${tw`md:w-1/2 lg:w-1/4 max-w-sm`}
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
+  ${tw`flex flex-col sm:flex-col items-center sm:items-center text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
-    ${tw`border text-center rounded-full p-5 flex-shrink-0`}
+    ${tw`text-center p-6 flex-shrink-0`}
     img {
-      ${tw`w-6 h-6`}
+      ${tw`w-32 h-32`}
     }
   }
 
@@ -51,7 +51,7 @@ const Card = styled.div`
 `;
 
 
-export default ({ cards = null, heading = "Solução Completa", subheading = "Serviços", description = "Temos profissionais com capacitação técnica adequada para dar o suporte que sua empresa precisa. Nossa equipe cuida da manutenção dos sistemas legados ou de terceiros que você já utiliza, monitorando o funcionamento dos softwares e fazendo melhorias." }) => {
+export default ({ cards = null, heading = "Solução Completa", subheading = "Serviços", description = "Somos uma equipe de Desenvolvedores que compartilha da paixão de transformar ideias brilhantes em sites e aplicativos incríveis. " }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
    *  1) imageSrc - the image shown at the top of the card
@@ -62,13 +62,25 @@ export default ({ cards = null, heading = "Solução Completa", subheading = "Se
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Desenvolvimento de Software",
-      description: "Solução completa a ponto de atender todas as necessidades do seu negócio."
+      imageSrc: prop,
+      title: "Prototipagem de Software",
+      description: "Tem uma ideia brilhante de StartUp e precisa de um Mvp? Você está à um passo de ser financiado."
     },
-    { imageSrc: SupportIconImage, title: "Suporte e Sustentação de Sistemas", description: "Temos profissionais com capacitação técnica adequada para dar o suporte que sua empresa precisa." },
-    { imageSrc: ReliableIconImage, title: "Criação de Web e Mobile Apps", description: "Desenvolvemos aplicativos web e mobile focando na melhor experiência do usuário." },
-    { imageSrc: FastIconImage, title: "Outsourcing", description: "A Kbase disponibiliza profissionais para trabalhar dentro da sua empresa e se dedicar 100% aos processos de TI." },
+    { 
+      imageSrc: software, 
+      title: "Desenvolvimento de Software", 
+      description: "Desenvolvemos aplicativos web e mobile utilizando das principais tecnologias do mercado." 
+    },
+    {
+      imageSrc: robot,
+      title: "Bots de What's App",
+      description: "Fica louco de tanto responder mensagens? Vamos automatizar isso para você"
+    },
+    { 
+      imageSrc: dev, 
+      title: "Programadores sob Demanda", 
+      description: "Disponibilizamos do profissional que falta para seu projeto arrancar de vez." 
+    },
   ];
 
   if (!cards) cards = defaultCards;
@@ -84,7 +96,7 @@ export default ({ cards = null, heading = "Solução Completa", subheading = "Se
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
+                <img src={card.imageSrc} alt="" />
               </span>
               <span className="textContainer">
                 <span className="title">{card.title}</span>

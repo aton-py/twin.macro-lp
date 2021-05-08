@@ -11,18 +11,19 @@ import Footer from "components/footer/Footer.js";
 
 
 export default () => {
-  const Subheading = tw.span`uppercase tracking-widest font-bold text-orange-400`;
-  const HighlightedText = tw.span`text-orange-400`;
+  const Subheading = tw.span`uppercase tracking-widest font-bold text-green-100`;
+  const HighlightedText = tw.span`text-green-100`;
 
   return (
     <AnimationRevealPage>
     
       <Hero roundedHeaderButton={true} />
       <Features
+        id="about"
         subheading={<Subheading>serviços</Subheading>}
         heading={
           <>
-            Solução <HighlightedText>Completa</HighlightedText>
+            Nós vivemos <HighlightedText>Tecnologia</HighlightedText>
           </>
         }
       />
@@ -39,11 +40,11 @@ export default () => {
             stars: 5,
             profileImageSrc:
               "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-            heading: "Otimo atendimento",
+            heading: "Ótimo atendimento e suporte ao cliente",
             quote:
               "Equipe está sempre pronta para identificar as necessidades e apresentar soluções inovadoras adequadas à realidade de cada cliente. Experts em otimizar processos, ampliar a produtividade da sua equipe e gerar mais retorno financeiro.",
-            customerName: "Marcela Silva",
-            customerTitle: "CEO, Unimed"
+            customerName: "Daniela Obregon",
+            customerTitle: "CEO, Costa Brazil Receptivo Internacional"
           },
           {
             stars: 5,
@@ -51,9 +52,9 @@ export default () => {
               "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
             heading: "Além do esperado",
             quote:
-              "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            customerName: "Adam Cup",
-            customerTitle: "CTO, GRUPO MBM"
+              "Entregas de qualidade e respeitando os prazos delimitados. Reis e Bertini foram a melhor escolha que fizemos para concretizar nossa ideia.",
+            customerName: "Nuno Cabruja",
+            customerTitle: "CEO, Airbandbees Trancoso"
           }
         ]}
       />
@@ -66,34 +67,34 @@ export default () => {
         }
         faqs={[
           {
-            question: "Vocês dão manutenção em sistemas Legado ?",
+            question: "Quais são as tecnologias que vocês trabalham ?",
             answer:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Trabalhamos com Javascript, Typescript, GraphQL, MongoDB, Expo, React, React Native, Flutter, NodeJs, NestJs, Python e muito mais."
           },
           {
             question: "Quanto tempo eu tenho meu projeto pronto ?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "O tempo de entrega do projeto pode variar à depender da quantidade de Features, ou seja, de implementações requisitadas pelo cliente. Após a análise de seu projeto lhe daremos um roadmap com todos milestones."
           },
           {
-            question: "Quais tecnlogias vocês usam ?",
+            question: "Minha empresa precisa de uma aplicação web ?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Sim, uma aplicação web pode ser um fator de destaque para sua empresa perante a concorrencia."
           },
           {
-            question: "Quantos anos de mercado ?",
+            question: "Posso parcelar o valor do projeto ?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Sim, o projeto pode ser parcelado no cartão ou boleto à depender do valor e do projeto."
           },
           {
-            question: "O que é software e por que preciso de um ?",
+            question: "Qual a diferença de uma aplicação web e um aplicativo de celular ?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Uma aplicação web oferece os mesmos recursos que um aplicativo de celular, sem a necessidade de instalação do mesmo no aparelho."
           },
           {
-            question: "E ai, me contratam agora ?",
+            question: "Como fazer minha marca aparecer no Google ?",
             answer:
-              "Ao clicar no elemento acima você declarou SIM para a pergunta ;)"
+              "Não se preocupe, trabalhamos com as melhores ferramentas de SEO, ou seja, seu proejto tem tudo para escalar globalmente."
           }
         ]}
       />

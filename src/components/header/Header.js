@@ -6,9 +6,14 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/kbase_logo.png";
+import logo from "../../images/biochemistry.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+
+import Scroll from 'react-scroll'
+
+const ScrollLink = Scroll.ScrollLink
+
 
 const Header = tw.header`
   flex justify-between items-center
@@ -21,7 +26,7 @@ export const NavLinks = tw.div`inline-block
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-orange-400 hocus:text-orange-400
+  pb-1 border-b-2 border-transparent hover:border-green-100 hocus:text-green-100
 `;
 
 export const PrimaryLink = tw(NavLink)`
@@ -32,10 +37,10 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center object-scale-down font-black border-b-0 text-2xl! ml-0!`};
 
   img {
-    ${tw`w-32 mr-3`}
+    ${tw`w-20 mr-3`}
   }
 `;
 
@@ -58,13 +63,14 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">Sobre</NavLink>
-      <NavLink href="/#">Serviços</NavLink>
-      <NavLink href="/#">Cases</NavLink>
-      <NavLink href="/#">Conteúdo</NavLink>
-      <NavLink href="/#">Trabalhe conosco</NavLink>
-      <NavLink href="/#">Contato</NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full h-12 px-6 m-2 text-lg text-black transition-colors duration-150 bg-orange-400 rounded-lg focus:shadow-outline hover:bg-red-800`}href="/#">Login</PrimaryLink>
+      <NavLink href="/">Sobre</NavLink>
+       
+      <NavLink href="/#">Avaliações</NavLink>
+      <NavLink href="/#">FAQ</NavLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full h-12 px-6 m-2 text-lg text-black transition-colors duration-150 bg-green-100 rounded-lg focus:shadow-outline hover:bg-green-600`}href="https://wa.me/5573988064753"
+        class="whatsapp"
+        target="_blank"
+        rel="noopener noreferrer">What's App</PrimaryLink>
     </NavLinks>
   ];
 
