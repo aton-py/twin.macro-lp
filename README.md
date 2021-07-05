@@ -1,12 +1,5 @@
 # Landing page utilizando TailwindCss + Styled-Components ⚡️ 
 
-
-
-<h2 align="center">
-  <img src="https://github.com/kali-r3i5/tailwind_styled-components_landing_page/blob/main/reisebertini.netlify.app_%20(1).png" />
-  <br>
-</h2>
-
 ## Features
 
 ⚡️ Modern UI Design\
@@ -17,3 +10,9 @@
 ## Getting Started 🚀
 
 For this project use `npm instal` then `npm start`
+
+<h2 align="center">
+  <img src="https://github.com/kali-r3i5/tailwind_styled-components_landing_page/blob/main/reisebertini.netlify.app_%20(1).png" />
+  <br>
+</h2>
+
