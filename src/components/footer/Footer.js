@@ -138,7 +138,7 @@ export default () => {
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://github.com/aton-py">
+            <SocialLink href="https://github.com/kali-r3i5">
               <GitHub />
             </SocialLink>
             {/* <SocialLink href="https://youtube.com">
