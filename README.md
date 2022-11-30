@@ -1,4 +1,4 @@
-# Landing page utilizando TailwindCss + Styled-Components ⚡️ 
+# 🚀 Fully Responsive Landing Page with Tailwind + Styled-Components 🚀
 
 ## Features
 
